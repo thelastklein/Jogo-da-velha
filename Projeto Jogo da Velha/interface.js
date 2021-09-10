@@ -29,7 +29,22 @@ function updateSquares(){
         let symbol = board[position];
 
         if (symbol !=''){
-            square.innerHTML = `<div class ='${symbol}'> </div>`
+            square.innerHTML = `<div id="lg" class ='${symbol}'> </div>`
         }
     })
+}
+
+
+function resetGame(){
+
+    gameOver = false;
+    board = ['','','','','','','','',''];
+    
+    let squares = document.querySelectorAll(".square")
+
+    squares.forEach((square) =>{
+        document.getElementById("lg").remove();
+    })
+    
+    playerTime = 0;
 }
