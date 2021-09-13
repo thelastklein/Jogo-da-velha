@@ -15,7 +15,7 @@ function handleClick(event){
     if (handleMove(position)) {
 
         setTimeout(() => {
-            alert(" O jogo Acabou - O vencedor foi " + playerTime);
+            alert(" O jogo Acabou - O vencedor foi o Jogador " + playerTime);
         }, 10);
     };
     updateSquares();
