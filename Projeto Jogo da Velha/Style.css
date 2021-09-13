@@ -1,16 +1,26 @@
 body{
     text-align: center;
+    background-color: paleturquoise;
 }
 h1{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    border: 1px solid black;
+    background-color: beige;
 }
 
 .square{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-color: beige;
     border: 1px solid gray;
     display: inline-block;
+}
+
+.square:hover{
+    width: 160px;
+    height: 160px;
+
 }
 
 .o{
@@ -21,8 +31,8 @@ h1{
 .o:after{
     position:absolute;
     content: "\1F6E1";
-    font-size: 50px;
-    line-height: 100px;
+    font-size: 90px;
+    line-height: 140px;
     top: 0;
     bottom: 0;
     left: 0;
@@ -37,10 +47,34 @@ h1{
 .x:after{
     position:absolute;
     content: "\2694";
-    font-size: 50px;
-    line-height: 100px;
+    font-size: 90px;
+    line-height: 140px;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+.reset{
+    margin-top: 10px;
+    width: 140px;
+    height: 50px;
+    border-radius: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    border: 1px solid black;
+    background-color: beige;
+    
+}
+
+.reset:hover{
+    width: 150px;
+    height: 60px;
+}
+
+@media only screen and (max-width: 600px) {
+    .square{width: 100px; height: 100px;}
+    .square:hover{width: 110px; height: 110px;}
+    .x:after{font-size: 80px; line-height: 120px;}
+    .o:after{font-size: 80px; line-height: 120px;}
 }
